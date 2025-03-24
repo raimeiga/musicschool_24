@@ -1,0 +1,453 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+//----------"p-top__fv-------------
+
+.p-top__fv {
+ width: 100%;
+}
+
+.p-top-fv__inner {
+ width: 100%;
+ position: relative;
+}
+
+.p-top-fv__img {
+ width: 100%;
+ position: relative;
+}
+
+.p-top-fv__img::before { 
+ content: '';
+ width: 100%;
+ height: 100%;
+ background-color: rgba(80, 80, 80, 0.502);
+ position: absolute;
+ top:0;
+}
+
+.p-top__text {
+ background-color: red;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ width: 100%;
+ text-align: center;
+ color: #fff;
+ font-size: 4rem;
+ line-height: calc(60 / 40);
+ @include sp {
+   font-size: 3rem;
+   line-height: calc(50 / 30);
+ }
+}
+
+
+//------------p-top__concept----------------
+
+.p-top__concept {
+ padding-block: 6.6rem 5.5rem;
+ @include sp {
+  padding-block: 4.6rem 3.4rem;
+ }
+}
+
+.p-top-concept__head {
+ width: 100%;
+ text-align: center;
+ color: $color-red;
+ font-size: 3.5rem;
+ line-height: calc(50 / 35);
+ @include sp {
+   font-size: 2.5rem;
+   line-height: calc(40 / 25);
+ }
+}
+
+.p-top-concept__text {
+ width: 100%;
+ text-align: center;
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ font-weight: 500;
+ padding-block: 1.7rem 3.4rem;
+ @include sp {
+   padding-block: 0.7rem 2rem;
+ }
+}
+
+.p-top-concept__img {
+ width: 100%;
+}
+
+.p-top-concept__diagram {
+ padding-top: 1.7rem;
+ display: flex;
+ flex-direction: column;
+ row-gap: 1.9rem;
+ @include sp {
+  padding-top: 3.2rem;
+ }
+}
+
+.p-top-concept-diagram__row {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.p-top-concept-diagram-row__pri {
+ background-color: aqua;
+ width: 40%;
+ text-align: right;
+ color: $color-red;
+ font-size: 2.5rem;
+ line-height: calc(50 / 25);
+ text-transform: capitalize;
+ @include sp {
+   font-size: 2rem;
+   line-height: calc(50 / 20);
+ }
+}
+
+.p-top-concept-diagram-row__circle {
+  background-color: $color-red;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin-inline: 3rem;
+  position: relative;
+ }
+
+ .p-top-concept-diagram-row__circle::before {
+  content: '';
+  background-color: $color-red;
+  width: 0.3rem;
+  height: 7rem;
+  position: absolute;
+  left: 50%;
+  bottom: 50%; 
+  transform: translateX(-50%);
+ }
+
+.p-top-concept-diagram-row__circle--top::before {
+ content: '';
+ background-color: $color-red;
+ width: 0.3rem;
+ height: 5rem;
+ position: absolute;
+ left: 50%;
+ bottom: 50%; 
+ transform: translateX(-50%);
+}
+
+.p-top-concept-diagram-row__circle--top::after {
+ content: '';
+ width: 2.5rem;
+ height: 2.5rem;
+ border: 0.3rem solid $color-red;
+ border-color: transparent transparent $color-red $color-red;
+ position: absolute;
+ left: -0.2rem;
+ bottom: 3.2rem; 
+ transform: rotate(135deg); 
+}
+
+
+.p-top-concept-diagram-row__sec {
+ background-color: aqua;
+ width: 40%;
+ font-size: 2.3rem;
+ line-height: calc(50 / 23);
+ font-weight: 500;
+ @include sp {
+  font-size: 2rem;
+  line-height: calc(50 / 20); 
+ }
+}
+
+
+//------------p-top__message----------------
+
+.p-top__message {
+ padding-block: 6.8rem 6rem;
+ @include sp {
+   padding-block: 4.9rem 4rem;
+ }
+}
+
+
+.p-top-message__text {
+ width: 100%;
+ text-align: center; 
+ color: #fff;
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ font-weight: 500;
+ padding-top: 3rem;
+ @include sp {
+   padding-top: 1.4rem;
+ }
+}
+
+
+//------------p-top__reason----------------
+
+.p-top__reason {
+ padding-block: 6.4rem 2rem;
+ @include sp {
+   padding-block: 4.9rem 0rem;
+ }
+}
+
+.p-top-reason__block {
+ margin-top: 2.8rem;
+ display: flex;
+ margin-bottom: 5rem;
+ @include sp {
+  margin-top: 3.6rem;
+  flex-direction: column;
+  margin-bottom: 3.7rem;
+ }
+}
+
+.p-top-reason-block__img {
+ width: 35rem;
+ flex-shrink: 0;
+ @include sp {
+   width: 100%;
+ }
+}
+
+.p-top-reason-block__head {
+ padding: 0.7rem 0 1.2rem 5rem;
+ border-bottom: 0.2rem solid $color-red;
+ font-size: 2.2rem;
+ line-height: calc(33 / 22);
+ @include sp {
+  padding: 3rem 0 1rem 0;
+  font-size: 2rem;
+  line-height: calc(30 / 20);
+ }
+}
+
+.p-top-reason-block__text {
+ padding: 3.7rem 0 0 5rem;
+ font-size: 1.8rem;
+ line-height: calc(33 / 18);
+ font-weight: 500;
+ @include sp {
+  padding: 1.7rem 0 0 0rem;
+   font-size: 1.6rem;
+   line-height: calc(30 / 16);
+ }
+}
+
+
+
+
+
+//------------p-top__voice----------------
+
+.p-top__voice {
+ padding-block: 6.4rem 6rem;
+ @include sp {
+   padding-block: 4.6rem 5rem;
+ }
+}
+
+.p-top-voice__inner {
+ max-width: 108rem;
+ width: 100%;
+ padding-inline: 8.26rem;
+ margin: 0 auto;
+ @include sp {
+   padding-inline: 2rem;
+ }
+}
+
+.p-top-voice__lists {
+ padding-top: 3.6rem;
+
+}
+
+.slick-arrow {
+ position: absolute;
+ top: 16.3rem;
+ z-index: 100;
+  @include sp {
+    
+  }
+}
+
+.slick-prev {
+ position: absolute;
+ left: -2.5rem;
+ z-index: 100;
+  @include sp {
+   left: 0rem;
+  }
+}
+
+.slick-next {
+ position: absolute;
+ right: -2.5rem;
+ z-index: 100;
+  @include sp {
+    right: 0;
+  }
+}
+
+.p-top-voice__list {
+ margin-inline: 1.75rem;
+ @include sp {
+   margin: 0;
+ }
+}
+
+.p-top-voice-list__img {
+ width: 27rem;
+ @include sp {
+   width: 100%;
+ }
+}
+
+.p-top-voice-list__head {
+ width: 100%;
+ text-align: center;
+ color: #fff;
+ font-size: hvw1080(22);
+ line-height: calc(33 / 22);
+ padding-block: 1.7rem 1rem;
+ @include sp {
+  padding-block: 2.7rem 1rem;
+  font-size: 2.2rem;
+ }
+}
+
+.p-top-voice-list__text {
+ color: #fff;
+ font-size: hvw1080(18);
+ line-height: calc(30 / 18);
+ font-weight: 500;
+ @include sp {
+  font-size: 1.8rem;
+ }
+}
+
+//------------p-top__flow----------------
+
+.p-top__flow {
+ padding-block: 5.4rem; 
+ @include sp {
+  padding-block: 4.8rem; 
+ }
+}
+
+.p-top-flow__diagram {
+ padding-top: 4.9rem;
+ @include sp {
+  padding-top: 3.8rem;  
+ } 
+}
+
+.p-top-flow-diagram__row {
+ background-color: yellow;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 6rem;
+ @include sp {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 3.6rem;
+ }
+}
+
+.p-top-flow-diagram-row__circle { 
+ padding-top: 0.1rem;
+ width: 2rem;
+ height: 2rem;
+ position: relative;
+ border-radius: 1rem;
+ background-color: $color-red;
+ margin: 0 5rem;
+ @include sp {
+  margin: 0 2rem 0 0.8rem;
+ }
+}
+
+.p-top-flow-diagram-row__circle::before {
+ content: '';
+ height: 16rem;
+ width: 0.3rem;
+ position: absolute;
+ top: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ background: $color-red;
+ @include sp {
+  height: 22rem;
+ }
+}
+
+.p-top-flow-diagram-row__circle--bottom::before {
+ content: '';
+ height: 6.1rem;
+ width: 0.3rem;
+ position: absolute;
+ top: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ background: $color-red;
+ @include sp {
+  height: 15.5rem;
+ }
+}
+
+.p-top-flow-diagram-row__circle--bottom::after {
+ content: '';
+ width: 2.5rem;
+ height: 2.5rem;
+ position: absolute;
+ left: -0.2rem;
+ bottom: -12rem;
+ border: 0.3rem solid;
+ border-color: transparent transparent $color-red $color-red;
+ transform: rotate(-45deg);
+ @include sp {
+  left: -0.25rem;
+  bottom: -13.3rem;
+ }
+}
+
+.p-top-flow-diagram-row__head {
+ background-color: aqua;
+ width: 19.2rem;
+ font-size: 2.2rem;
+ line-height: calc(33 / 22);
+ font-weight: bold;
+ color: $color-red;
+ padding-top: -0.1rem;
+ @include sp {
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+ }
+}
+
+.p-top-flow-diagram-row__text {
+ background-color: aqua;
+ width: 56.7rem;
+ font-size: 1.8rem;
+ line-height: calc(30 / 18);
+ font-weight: 500;
+ @include sp {
+  width: 100%;
+  margin-left: 4.8rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  padding-top: 0;
+ }
+}
