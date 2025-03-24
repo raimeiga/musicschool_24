@@ -346,108 +346,114 @@
 }
 
 .p-top-flow__diagram {
- padding-top: 4.9rem;
- @include sp {
-  padding-top: 3.8rem;  
- } 
-}
-
-.p-top-flow-diagram__row {
- background-color: yellow;
  display: flex;
- justify-content: space-between;
  align-items: center;
- margin-bottom: 6rem;
- @include sp {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 3.6rem;
- }
+ justify-content: space-between;
 }
 
-.p-top-flow-diagram-row__circle { 
- padding-top: 0.1rem;
- width: 2rem;
- height: 2rem;
- position: relative;
- border-radius: 1rem;
- background-color: $color-red;
- margin: 0 5rem;
- @include sp {
-  margin: 0 2rem 0 0.8rem;
- }
-}
+// .p-top-flow__diagram {
+//  padding-top: 4.9rem;
+//  @include sp {
+//   padding-top: 3.8rem;  
+//  } 
+// }
 
-.p-top-flow-diagram-row__circle::before {
- content: '';
- height: 16rem;
- width: 0.3rem;
- position: absolute;
- top: 0;
- left: 50%;
- transform: translateX(-50%);
- background: $color-red;
- @include sp {
-  height: 22rem;
- }
-}
+// .p-top-flow-diagram__row {
+//  background-color: yellow;
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  margin-bottom: 6rem;
+//  @include sp {
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   margin-bottom: 3.6rem;
+//  }
+// }
 
-.p-top-flow-diagram-row__circle--bottom::before {
- content: '';
- height: 6.1rem;
- width: 0.3rem;
- position: absolute;
- top: 0;
- left: 50%;
- transform: translateX(-50%);
- background: $color-red;
- @include sp {
-  height: 15.5rem;
- }
-}
+// .p-top-flow-diagram-row__circle { 
+//  padding-top: 0.1rem;
+//  width: 2rem;
+//  height: 2rem;
+//  position: relative;
+//  border-radius: 1rem;
+//  background-color: $color-red;
+//  margin: 0 5rem;
+//  @include sp {
+//   margin: 0 2rem 0 0.8rem;
+//  }
+// }
 
-.p-top-flow-diagram-row__circle--bottom::after {
- content: '';
- width: 2.5rem;
- height: 2.5rem;
- position: absolute;
- left: -0.2rem;
- bottom: -12rem;
- border: 0.3rem solid;
- border-color: transparent transparent $color-red $color-red;
- transform: rotate(-45deg);
- @include sp {
-  left: -0.25rem;
-  bottom: -13.3rem;
- }
-}
+// .p-top-flow-diagram-row__circle::before {
+//  content: '';
+//  height: 16rem;
+//  width: 0.3rem;
+//  position: absolute;
+//  top: 0;
+//  left: 50%;
+//  transform: translateX(-50%);
+//  background: $color-red;
+//  @include sp {
+//   height: 22rem;
+//  }
+// }
 
-.p-top-flow-diagram-row__head {
- background-color: aqua;
- width: 19.2rem;
- font-size: 2.2rem;
- line-height: calc(33 / 22);
- font-weight: bold;
- color: $color-red;
- padding-top: -0.1rem;
- @include sp {
-  line-height: 1.5;
-  margin-bottom: 1.2rem;
- }
-}
+// .p-top-flow-diagram-row__circle--bottom::before {
+//  content: '';
+//  height: 6.1rem;
+//  width: 0.3rem;
+//  position: absolute;
+//  top: 0;
+//  left: 50%;
+//  transform: translateX(-50%);
+//  background: $color-red;
+//  @include sp {
+//   height: 15.5rem;
+//  }
+// }
 
-.p-top-flow-diagram-row__text {
- background-color: aqua;
- width: 56.7rem;
- font-size: 1.8rem;
- line-height: calc(30 / 18);
- font-weight: 500;
- @include sp {
-  width: 100%;
-  margin-left: 4.8rem;
-  font-size: 1.6rem;
-  line-height: 1.8;
-  padding-top: 0;
- }
-}
+// .p-top-flow-diagram-row__circle--bottom::after {
+//  content: '';
+//  width: 2.5rem;
+//  height: 2.5rem;
+//  position: absolute;
+//  left: -0.2rem;
+//  bottom: -12rem;
+//  border: 0.3rem solid;
+//  border-color: transparent transparent $color-red $color-red;
+//  transform: rotate(-45deg);
+//  @include sp {
+//   left: -0.25rem;
+//   bottom: -13.3rem;
+//  }
+// }
+
+// .p-top-flow-diagram-row__head {
+//  background-color: aqua;
+//  width: 19.2rem;
+//  font-size: 2.2rem;
+//  line-height: calc(33 / 22);
+//  font-weight: bold;
+//  color: $color-red;
+//  padding-top: -0.1rem;
+//  @include sp {
+//   line-height: 1.5;
+//   margin-bottom: 1.2rem;
+//  }
+// }
+
+// .p-top-flow-diagram-row__text {
+//  background-color: aqua;
+//  width: 56.7rem;
+//  font-size: 1.8rem;
+//  line-height: calc(30 / 18);
+//  font-weight: 500;
+//  @include sp {
+//   width: 100%;
+//   margin-left: 4.8rem;
+//   font-size: 1.6rem;
+//   line-height: 1.8;
+//   padding-top: 0;
+//  }
+// }
