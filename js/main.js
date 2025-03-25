@@ -10,6 +10,17 @@ $(function (){
    $('.l-header__nav').removeClass('active')
  })
 
+//  $('.c-ham').on('click', function (){
+//     $(this).toggleClass('active');
+//     $('.l-header__nav').toggleClass('active');
+// });
+
+// $('.l-header__list a').on('click', function (){
+//     $('.c-ham').removeClass('active');
+//     $('.l-header__nav').removeClass('active');
+// });
+
+
 
 // slick
 $('.js-slider').slick({ 
@@ -32,5 +43,22 @@ $('.js-slider').slick({
     }
   ]
 });
+
+
+//TOP FAQのアコーディオン
+$('.p-top-faq__answer').hide();
+$('.p-top-faq__item').on('click', function(){
+    $(this).find('.p-top-faq-question__img').toggleClass('u-transform-180');
+    $(this).find('.p-top-faq__answer').slideToggle(400).toggleClass('u-flex');
+});
+
+// $('.p-top-faq__answer').hide();
+// $('.p-top-faq__item').click(function(){
+//  $(this).find('.p-top-faq__question-img').toggleClass('u-transform-180');
+//  $(this).find('.p-top-faq__answer').slideToggle(400).toggleClass('u-flex');
+// });
+
+
+
 
 });
