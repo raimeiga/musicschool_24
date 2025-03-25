@@ -49,16 +49,7 @@ $('.js-slider').slick({
 $('.p-top-faq__answer').hide();
 $('.p-top-faq__item').on('click', function(){
     $(this).find('.p-top-faq-question__img').toggleClass('u-transform-180');
-    $(this).find('.p-top-faq__answer').slideToggle(400).toggleClass('u-flex');
+    $(this).find('.p-top-faq__answer').slideToggle(400);
 });
-
-// $('.p-top-faq__answer').hide();
-// $('.p-top-faq__item').click(function(){
-//  $(this).find('.p-top-faq__question-img').toggleClass('u-transform-180');
-//  $(this).find('.p-top-faq__answer').slideToggle(400).toggleClass('u-flex');
-// });
-
-
-
 
 });
