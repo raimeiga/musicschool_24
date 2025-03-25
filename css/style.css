@@ -741,11 +741,11 @@ img {
 }
 
 .p-top__flow {
-  padding-block: 5.4rem;
+  padding-block: 5.4rem 0;
 }
 @media only screen and (max-width: 767px) {
   .p-top__flow {
-    padding-top: 4.6rem;
+    padding-block: 4.6rem 0;
   }
 }
 
@@ -754,11 +754,11 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .p-top-flow__diagram {
-    padding-top: 3.8rem;
+    padding-top: 3.9rem;
   }
 }
 
-.p-top-flow_-diagram__row {
+.p-top-flow-diagram__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,34 +768,14 @@ img {
   margin-bottom: 5.8rem;
 }
 @media only screen and (max-width: 767px) {
-  .p-top-flow_-diagram__row {
+  .p-top-flow-diagram__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 3.6rem;
   }
 }
 
-.p-top-flow_-diagram-row__head {
-  width: 19.2rem;
-  color: #bc0000;
-  font-size: 2.2rem;
-  line-height: 1.5;
-}
-
-.p-top-flow_-diagram-row__te {
-  font-size: 1.8rem;
-  line-height: 1.6666666667;
-  font-weight: 500;
-}
-@media only screen and (max-width: 767px) {
-  .p-top-flow_-diagram-row__te {
-    margin: 0.9rem 0 0 4.7rem;
-    font-size: 1.6rem;
-    line-height: 1.875;
-  }
-}
-
-.p-top-flow_-diagram-row__cir {
+.p-top-flow-diagram-row__cir {
   background-color: #bc0000;
   width: 2rem;
   height: 2rem;
@@ -804,62 +784,79 @@ img {
   position: relative;
 }
 @media only screen and (max-width: 767px) {
-  .p-top-flow_-diagram-row__cir {
-    margin: 0 2rem 0 0.7rem;
+  .p-top-flow-diagram-row__cir {
+    margin-inline: 0.7rem 2rem;
   }
 }
 
-.p-top-flow_-diagram-row__cir::before {
+.p-top-flow-diagram-row__cir::before {
   content: "";
   position: absolute;
   left: 50%;
-  top: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #bc0000;
   width: 0.3rem;
-  height: 11rem;
+  height: 12rem;
 }
 @media only screen and (max-width: 767px) {
-  .p-top-flow_-diagram-row__cir::before {
-    height: 19.4rem;
+  .p-top-flow-diagram-row__cir::before {
+    height: 20rem;
   }
 }
 
-.p-top-flow_-diagram-row__cir--bottom::before {
+.p-top-flow-diagram-row__cir--bottom::before {
   content: "";
   position: absolute;
   left: 50%;
-  top: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #bc0000;
   width: 0.3rem;
-  height: 5.3rem;
+  height: 6.4rem;
 }
 @media only screen and (max-width: 767px) {
-  .p-top-flow_-diagram-row__cir--bottom::before {
-    height: 13.6rem;
+  .p-top-flow-diagram-row__cir--bottom::before {
+    height: 14.5rem;
   }
 }
 
-.p-top-flow_-diagram-row__cir--bottom::after {
+.p-top-flow-diagram-row__cir--bottom::after {
   content: "";
-  position: absolute;
-  left: -0.25rem;
-  top: 3.6rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   width: 2.5rem;
   height: 2.5rem;
   border: 0.3rem solid #bc0000;
   border-color: transparent transparent #bc0000 #bc0000;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  position: absolute;
+  left: -0.25rem;
+  top: 3.8rem;
 }
 @media only screen and (max-width: 767px) {
-  .p-top-flow_-diagram-row__cir--bottom::after {
-    top: 12rem;
+  .p-top-flow-diagram-row__cir--bottom::after {
+    top: 11.9rem;
+  }
+}
+
+.p-top-flow-diagram-row__head {
+  width: 19.2rem;
+  color: #bc0000;
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
+.p-top-flow-diagram-row__te {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
+@media only screen and (max-width: 767px) {
+  .p-top-flow-diagram-row__te {
+    margin-left: 4.7rem;
+    padding-top: 0.9rem;
+    font-size: 1.6rem;
+    line-height: 1.875;
   }
 }
 
